@@ -1,3 +1,5 @@
+[![Claude Code Repos Index](https://img.shields.io/badge/Claude%20Code%20Repos-Index-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Repos-Index)
+
 # Pseudonym Workspace
 
 A Claude Code workspace for information security and document redaction, designed to protect the identity of whistleblowers, journalists' sources, research participants, and anyone handling sensitive information.
@@ -161,3 +163,7 @@ MIT License - See LICENSE file for details.
 - Consider contextual re-identification risks
 - Consult security professionals for high-stakes situations
 - Follow applicable legal and ethical guidelines
+
+---
+
+For more Claude Code projects, visit my [Claude Code Repos Index](https://github.com/danielrosehill/Claude-Code-Repos-Index).
