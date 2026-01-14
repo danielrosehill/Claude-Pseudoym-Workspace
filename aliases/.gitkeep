@@ -1,0 +1,11 @@
+# Aliases Directory
+
+Active alias mappings are stored here.
+
+Files in this directory:
+- active_mapping.json: Your current working mapping (not tracked by git)
+
+Create mappings using:
+- /create-alias command
+- alias_manager.py script
+- Copy from schemas/template_mapping.json
