@@ -1,0 +1,42 @@
+# Sensitive directories - never commit actual documents
+/input/*
+!/input/.gitkeep
+/output/*
+!/output/.gitkeep
+
+# Active alias mappings may contain sensitive information
+# Only example schemas should be committed
+/aliases/active_mapping.json
+
+# Exported schemas (may contain re-identification keys)
+/schemas/export_*.json
+/schemas/export_*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Log files
+*.log

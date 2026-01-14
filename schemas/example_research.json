@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "created": "2024-01-15T10:00:00Z",
+  "updated": "2024-01-15T10:00:00Z",
+  "description": "Example mapping for academic research participant anonymization",
+  "entities": [
+    {
+      "original": "Interview Subject 1",
+      "alias": "Participant P01",
+      "type": "person",
+      "variations": [],
+      "notes": "Use consistent numbering scheme"
+    },
+    {
+      "original": "Interview Subject 2",
+      "alias": "Participant P02",
+      "type": "person",
+      "variations": [],
+      "notes": ""
+    },
+    {
+      "original": "City General Hospital",
+      "alias": "Hospital A",
+      "type": "organization",
+      "variations": ["CGH", "City General"],
+      "notes": "Healthcare facility"
+    },
+    {
+      "original": "Dr. Williams",
+      "alias": "Physician P-A",
+      "type": "person",
+      "variations": ["Doctor Williams", "Williams"],
+      "notes": "Medical professional mentioned in interviews"
+    }
+  ],
+  "_research_notes": {
+    "irb_protocol": "Replace with your IRB protocol number",
+    "anonymization_level": "Full - no identifying information retained",
+    "retention_policy": "Destroy mapping after study completion per protocol"
+  }
+}

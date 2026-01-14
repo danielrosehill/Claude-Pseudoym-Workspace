@@ -1,0 +1,11 @@
+# Output Directory
+
+Redacted documents will be placed here after processing.
+
+After verification:
+1. Review all output documents manually
+2. Run /verify-redaction to check for issues
+3. Move verified documents to secure storage
+4. Clear this directory
+
+REMINDER: Even redacted documents may require secure handling.

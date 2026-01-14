@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "created": "2024-01-15T10:00:00Z",
+  "updated": "2024-01-15T10:00:00Z",
+  "description": "Example mapping for whistleblower document redaction",
+  "entities": [
+    {
+      "original": "John Smith",
+      "alias": "Source Alpha",
+      "type": "person",
+      "variations": ["John", "J. Smith", "Mr. Smith", "Smith"],
+      "notes": "Primary whistleblower - protect identity"
+    },
+    {
+      "original": "Sarah Johnson",
+      "alias": "Contact Beta",
+      "type": "person",
+      "variations": ["Sarah", "S. Johnson", "Ms. Johnson"],
+      "notes": "Secondary source"
+    },
+    {
+      "original": "Acme Corporation",
+      "alias": "Organization X",
+      "type": "organization",
+      "variations": ["Acme Corp", "Acme", "ACME", "Acme Inc"],
+      "notes": "Target organization"
+    },
+    {
+      "original": "Springfield Office",
+      "alias": "[LOCATION-OFFICE]",
+      "type": "location",
+      "variations": ["Springfield branch", "the Springfield office"],
+      "notes": "Regional office location"
+    },
+    {
+      "original": "Building 7",
+      "alias": "[BUILDING-A]",
+      "type": "location",
+      "variations": ["Bldg 7", "building seven"],
+      "notes": "Specific building reference"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Input Directory
+
+Place documents to be redacted in this directory.
+
+Supported file types:
+- Text: .txt, .md, .rtf
+- Documents: .docx, .pdf, .odt
+- Images: .jpg, .png, .gif, .tiff
+- Data: .csv, .json, .xml
+
+SECURITY NOTE:
+- Files in this directory may contain sensitive information
+- Clear this directory after processing
+- Do not commit sensitive documents to version control

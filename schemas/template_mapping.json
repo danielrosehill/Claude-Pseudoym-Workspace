@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "created": "",
+  "updated": "",
+  "description": "Template for creating new redaction mappings",
+  "entities": [
+    {
+      "original": "Example Name",
+      "alias": "Source A",
+      "type": "person",
+      "variations": ["E. Name", "Example"],
+      "notes": "Template entry - delete and replace with actual entities"
+    }
+  ],
+  "_documentation": {
+    "version": "Schema version number",
+    "created": "ISO timestamp when mapping was created",
+    "updated": "ISO timestamp of last update",
+    "description": "Optional description of this mapping's purpose",
+    "entities": "Array of entity objects",
+    "entity_fields": {
+      "original": "The original text to be redacted (required)",
+      "alias": "The replacement text (required)",
+      "type": "Category: person, organization, location, other",
+      "variations": "Array of alternative forms to also redact",
+      "notes": "Optional notes about this entity"
+    }
+  }
+}
