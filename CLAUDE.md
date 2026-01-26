@@ -1,16 +1,24 @@
-# Pseudonym Workspace - Information Security & Redaction
+# Claude Redaction and Obfuscation
 
 ## Purpose
 
-This Claude Space is designed to help protect the safety of whistleblowers, journalists, researchers, and anyone handling sensitive information that requires redaction or obfuscation before sharing.
+This Claude Code workspace supports human-guided document redaction and identity obfuscation for sensitive use cases. It is designed for situations where context and judgment matter more than automated pattern matching.
+
+**This is NOT an automated PII detection tool.** Use this workspace when you know what needs protecting and why, and need Claude's assistance to do it systematically and consistently.
+
+## Primary Use Cases
+
+- **Whistleblowing**: Prepare documents for disclosure while protecting identity
+- **Source Protection**: Redact journalist sources and confidential informants
+- **Defamation Defense**: Sanitize documents for anonymous posting about legally sensitive topics
+- **Anonymous Publishing**: Remove identifying details before public release
 
 ## Core Capabilities
 
 ### Document Redaction
-- **Text replacement**: Replace sensitive names, locations, organizations with pseudonyms
-- **Consistent aliasing**: Maintain a mapping so "John Smith" always becomes "Mr. X" across documents
-- **Random replacement**: Generate unique random identifiers per document for enhanced security
-- **Pattern-based redaction**: Detect and redact emails, phone numbers, addresses, SSNs, etc.
+- **Guided text replacement**: Replace names, locations, organizations with pseudonyms you specify
+- **Consistent aliasing**: Maintain mappings so "John Smith" always becomes "Source A" across all documents
+- **Random replacement**: Generate unique random identifiers per document when correlation is a risk
 
 ### Metadata Scrubbing
 - Remove EXIF data from images

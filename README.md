@@ -1,18 +1,39 @@
 [![Claude Code Repos Index](https://img.shields.io/badge/Claude%20Code%20Repos-Index-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Repos-Index)
 
-# Pseudonym Workspace
+# Claude Redaction and Obfuscation
 
-A Claude Code workspace for information security and document redaction, designed to protect the identity of whistleblowers, journalists' sources, research participants, and anyone handling sensitive information.
+A Claude Code workspace for document redaction, identity obfuscation, and information security. This workspace supports human-guided redaction workflows for sensitive use cases including whistleblowing, source protection, defamation defense, and anonymous publishing.
 
-## Purpose
+## What This Is (And Isn't)
 
-This workspace provides tools and workflows for:
+**This is NOT** an automated PII detection/redaction tool. There are many excellent programmatic solutions for bulk PII scrubbing and compliance workflows.
 
-- **Document Redaction**: Replace names, organizations, locations, and other identifying information with pseudonyms
-- **Metadata Scrubbing**: Remove hidden metadata from images, PDFs, and documents that could reveal origins
-- **Pattern Detection**: Automatically identify and redact emails, phone numbers, addresses, and other sensitive patterns
-- **Alias Management**: Maintain consistent pseudonym mappings across document sets
-- **Verification**: Check that redaction is complete and consistent
+**This IS** an interactive workspace for thoughtful, human-directed redaction where:
+- You know what needs to be protected and why
+- Context matters more than pattern matching
+- Consistent obfuscation across documents is critical
+- You need to maintain (or deliberately destroy) the ability to reverse the process
+
+## Use Cases
+
+### Whistleblowing & Source Protection
+Prepare documents for disclosure while protecting your identity or your sources. Replace identifying details with consistent pseudonyms, strip metadata that could reveal document origins, and verify completeness before sharing.
+
+### Defamation Protection
+Sanitize documents for anonymous posting when discussing legally sensitive topics. Obfuscate identifying details about individuals or organizations to enable public discussion without liability exposure.
+
+### Anonymous Publishing
+Prepare content for publication where author identity must remain hidden. Remove stylometric fingerprints, strip metadata, and ensure no identifying breadcrumbs remain.
+
+### Research & Journalism
+Protect interview subjects, maintain source confidentiality, and comply with ethical requirements for participant privacy.
+
+## Core Capabilities
+
+- **Guided Redaction**: Interactive replacement of names, organizations, locations with pseudonyms or random identifiers
+- **Metadata Scrubbing**: Remove EXIF, PDF metadata, document properties, and other hidden identifiers
+- **Alias Management**: Maintain consistent mappings so "John Smith" always becomes "Source A" across your document set
+- **Verification**: Check that redaction is complete and no identifying patterns slipped through
 
 ## Quick Start
 
@@ -51,12 +72,11 @@ Use when documents should not be correlatable:
 - Maximum protection against cross-referencing
 - Best for: High-security situations, source protection
 
-### Pattern-Based Mode
-Automatic detection and redaction:
-- Emails → `[EMAIL-REDACTED-001]`
-- Phones → `[PHONE-REDACTED-001]`
-- SSNs → `[SSN-REDACTED]`
-- Best for: Bulk processing, data cleanup
+### Pattern-Assisted Mode
+Claude can help identify common patterns, but you direct what gets redacted:
+- Emails, phones, addresses flagged for your review
+- You decide what's actually sensitive in context
+- Best for: Catching items you might have missed
 
 ### Hybrid Mode
 Combine techniques for comprehensive protection:
@@ -131,26 +151,19 @@ python scripts/metadata_scrubber.py --check-tools
 4. **Consider writing style**: Unique phrasing can identify sources
 5. **Test first**: Verify workflow with non-sensitive test documents
 
-## Use Cases
+## When to Use This vs. Automated Tools
 
-### Whistleblower Document Preparation
-Protect identity when sharing evidence with journalists or authorities.
-
-### Academic Research Anonymization
-Comply with IRB requirements for participant privacy.
-
-### Journalistic Source Protection
-Redact documents before publication to protect sources.
-
-### Legal Discovery
-Remove privileged or sensitive information before document production.
-
-### Data Sanitization
-Clean datasets for sharing or publication.
+| Use This Workspace | Use Automated PII Tools |
+|--------------------|------------------------|
+| You know exactly what to redact | You need to scan unknown data for PII |
+| Context determines what's sensitive | Regex patterns can identify the sensitive data |
+| Consistency across documents matters | One-off bulk processing |
+| You may need to reverse the redaction | Permanent, irreversible scrubbing is fine |
+| Human judgment required | Compliance-driven automation |
 
 ## Contributing
 
-This is a Claude Space - a specialized workspace for Claude Code. The structure follows the Claude Spaces model for organizing AI-assisted workflows.
+This is a Claude Code workspace for human-guided redaction workflows. Contributions that improve the interactive redaction experience are welcome. This is explicitly not intended to become an automated PII detection tool.
 
 ## License
 
